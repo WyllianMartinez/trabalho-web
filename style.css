@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+
+.btn-nav {
+    background-color:green; /* Substitua pela cor desejada */
+    border-color: green; /* Substitua pela cor desejada */
+}
+
+/* Cor do botão ao passar o mouse por cima */
+.btn-nav:hover {
+    background-color:rgba(0, 128, 0, 0.804); /* Substitua pela cor desejada */
+    border-color:rgba(0, 128, 0, 0.804);/* Substitua pela cor desejada */
+    
+}
+
 .navbar {
-    background: linear-gradient(to right, #063d70, #07345e);
+    background: radial-gradient(#0E3659, #001c33)
+    
 }
 
 body {
     background: #D8D8D8;
+    overflow: auto;
     
 }
 
@@ -20,18 +35,19 @@ body {
 }
 
 .nav-link {
-    color: white;
+    color: rgb(183, 181, 181);
 }
 
 .navbar-nav .nav-item.active .nav-link {
-    border-bottom: 2px solid #FF2C65;
+    border-bottom: 2px solid white;
     margin-bottom: 0px;
-    color: #FF2C65;
+    color: white;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #FF2C65
+    color: white
 }
+
 
 
 .logo {
@@ -44,8 +60,13 @@ body {
 .mobile-app {
     height: 400px;
     width: auto;
-    margin-right: 30px;
+    margin-top: 70px;
+    margin-bottom: 35px;
     border-radius: 30px;
+}
+
+.container-cell{
+    margin-left: 10px;
 }
 
 
@@ -75,20 +96,172 @@ body {
     background-repeat: no-repeat;
     text-decoration: none;
     border-radius: 6px;
+    
+    /* Adiciona esta linha para alinhar o texto no meio verticalmente */
+    line-height: 1.5rem; /* Ajuste conforme necessário */
 }
+
 
 .titulo {
     font-family: 'Roboto Slab', serif;;
-    font-size: 60px;
+    font-size: 25px;
+    
     
 }
-.btn-nav {
-    --bs-btn-padding-y: .25rem; 
-    --bs-btn-padding-x: .5rem; 
-    --bs-btn-font-size: .75rem;
+
+.card{
+    width: 400px;
+    height: 300px;
+    margin-top: 90px;
+    margin-bottom: 200px;
+    background-color: #07345e8c;
+}
+
+.card-text{
+    font-size: 10px;
+    text-align: justify;
+}
+
+.card-title{
+    font-family: 'Roboto Slab', serif;;
+    font-size: 40px;
+    margin-left: 5px;
+    margin-top: 20px;
+    color: white;
+
+}
+
+.card-title2{
+    font-family: 'Roboto Slab', serif;;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+
+}
+
+.alert-primary{
+    width: 350px;
+    height: 70px;
+    background-color: rgb(171, 171, 7);
+    color: white;
+    margin-top: 50px;
+    margin-left: 8px;
+}
+
+.separar-carousel{
+    height: 30px;
+    background: radial-gradient(#0E3659, #001c33)
+}
+
+.img-card{
+    width: 210px;
+    height:130px;
+    border-radius: 10px;
+    border: 1px solid #888 ;
+
+}
+
+.custom-card2{
+    width: 250px;
+    height:250px;
+    background-color: white;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+.card-primeira-div{
+    width: 250px;
+    height: 300px;
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 13px;
+    
+}
+.colunas{
+    margin-top: 0px;
+    margin-left: 63px;
+    margin-right: 63px;;
+}
+
+.text-title-div{
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    
+}
+
+.title-primeira-div{
+    height: 70px;
+    background-color: white;
+    padding-top: 15px;
+}
+
+.primeira-div{
+    height: 400px;
+    background-color:#bdbcbc;
+}
+
+.carousel-item{
+    background-color: #0E3659; /* Defina o fundo como transparente */
+    transition: transform 0.1s ease; 
 }
 
 
+.carousel-control-prev{
+    background-color: #888;
+
+}
+
+.carousel-control-next{
+    background-color:#888;
+
+}
+
+.carousel{
+    background-color: #8888882e;
+    
+}
+
+.carousel-inner{
+    overflow: hidden;
+    background-color: #0E3659;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    height: 20px; /* Ajuste o tamanho conforme necessário */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+     /* Ajuste o tamanho conforme necessário */
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+    line-height: 1; /* Garante que a altura seja a mesma que a altura do ícone */
+}
+
+.icon-carousel{
+    transform: scale(1.2, 4.0);
+    color: #000000;
+
+}
+
+.btn-carousel{
+    background-color: transparent;
+    border: transparent;
+}
+
+
+
+.btn-download{
+    margin: 10px;
+}
 
 .market-btn .market-button-title {
     display: block;
@@ -113,4 +286,85 @@ body {
 
 .google-btn {
     background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBvbHlnb24gc3R5bGU9ImZpbGw6IzVDREFERDsiIHBvaW50cz0iMjkuNTMsMCAyOS41MywyNTEuNTA5IDI5LjUzLDUxMiAyOTkuMDA0LDI1MS41MDkgIi8+Cjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNCREVDQzQ7IiBwb2ludHM9IjM2OS4wNjcsMTgwLjU0NyAyNjIuMTc1LDExOS40NjcgMjkuNTMsMCAyOTkuMDA0LDI1MS41MDkgIi8+Cjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNEQzY4QTE7IiBwb2ludHM9IjI5LjUzLDUxMiAyOS41Myw1MTIgMjYyLjE3NSwzODMuNTUxIDM2OS4wNjcsMzIyLjQ3IDI5OS4wMDQsMjUxLjUwOSAiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQ0E5NjsiIGQ9Ik0zNjkuMDY3LDE4MC41NDdsLTcwLjA2Myw3MC45NjFsNzAuMDYzLDcwLjk2MWwxMDguNjg4LTYyLjg3N2M2LjI4OC0zLjU5Myw2LjI4OC0xMS42NzcsMC0xNS4yNyAgTDM2OS4wNjcsMTgwLjU0N3oiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+}
+
+.card5{
+    width: 250px;
+    height: 400px;
+    
+}
+
+.primeira-div5{
+    
+    height: 500px;
+    background-color:#bdbcbc;
+    
+}
+
+.custom-card5{
+    width: 250px;
+    height:400px;
+    background-color: white;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    padding-top: 15px;
+    
+}
+
+
+
+.img-cash {
+    width: 110px;
+    height: 100px;
+    border-radius: 10px;
+    background-color:gainsboro;
+    padding: 10px;
+    
+    
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titulo-preco{
+    text-align: center;
+}
+
+.div-sobre{
+    width: 2000px;
+    height: 350px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 25px;
+}
+
+.div-fim{
+
+    
+    height: 300px;
+    background-color:#001c33e4;
+
+
+}
+
+.container-footer{
+    height: 50px;
+    text-align: center;
+    background: #001c33;
+}
+
+.text-footer{
+    font-size: 14px;
+    padding: 10px;
+    color: white;
+}
+
+.navbar-toggler-icon-color{
+    background-color: #f7f7f7;
 }
